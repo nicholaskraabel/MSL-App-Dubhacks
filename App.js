@@ -10,10 +10,10 @@ import AppNavigator from "./assets/navigation/AppNavigator";
 
 import ReadAct from './ReadActPhoneticSound';
 
-import Writting from './WritingAct';
+import Writing from './WritingAct';
 export default function App() {
   return (
-   <Writting/>
+   <Writing/>
   );
 }
 

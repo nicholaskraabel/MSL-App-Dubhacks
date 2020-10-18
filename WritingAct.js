@@ -1,7 +1,6 @@
 import { Video } from 'expo-av';
 import React, { Component } from 'react';
 import { TextInput, StyleSheet, View, Text } from 'react-native';
-import { random_sentence} from './assets/data/sentenceList';
 
 
 //user typing box
@@ -9,7 +8,7 @@ function UserTextInput () {
     var sentences = ["please", "work", "it", "out"];
     var textDisplay = sentences[Math.floor(Math.random()*sentences.length)];
 
-  const [value, onChangeText] = React.useState('Type in what you see');
+    const [value, onChangeText] = React.useState('Type in what you see');
 
   return (
     <View style={styles.inputbox}>
