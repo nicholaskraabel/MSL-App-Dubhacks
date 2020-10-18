@@ -16,11 +16,11 @@ export default class Menu extends Component {
 			<ScrollView style={{marginTop: 30, backgroundColor: '#FFFFFF'}}>
 				<H2>Writing</H2>
 				<ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={{marginBottom: 75, marginTop: 10}}>
-					<GameCard title="Title" color="#AFE0FF">
-						Short Description
+					<GameCard title="Copy the sentence" color="#AFE0FF">
+						Copy or write over a sentence  while it is being read out.
 					</GameCard>
-					<GameCard title="Title" color="#EDE398">
-						Short Description
+					<GameCard title="Draw the sentence" color="#EDE398">
+						Read a block of sentence and draw or write it!
 					</GameCard>
 				</ScrollView>
 
