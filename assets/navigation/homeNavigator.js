@@ -2,15 +2,15 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 
 
-import Menu from "../screens/menu";
+import Home from "../screens/home.js";
 
 const Stack = createStackNavigator();
 
-const menuNavigator = () => (
+const homeNavigator = () => (
 
   <Stack.Navigator mode="modal" screenOptions={{ headerShown: false }}>
-    <Stack.Screen name="Menu" component={Menu} />
+    <Stack.Screen name="Home" component={Home} />
   </Stack.Navigator>
 );
 
-export default menuNavigator;
+export default homeNavigator;

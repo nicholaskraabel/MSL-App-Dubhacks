@@ -1,17 +1,7 @@
 import { Video } from 'expo-av';
 import React, { Component } from 'react';
 import { TextInput, StyleSheet, View, Text } from 'react-native';
-
-
-
-
-    //function to randomly generate the sentece
-// function random_sentence(sentences) {
-//     return sentences[Math.floor(Math.random()*sentences.length)];
-// }
-
-// var textDisplay = (random_sentence(sentences));
-// <View><Text>textDisplay</Text></View>
+import { random_sentence} from './assets/data/sentenceList';
 
 
 //user typing box
@@ -31,9 +21,7 @@ function UserTextInput () {
         onChangeText={text => onChangeText(text)}
         value={value}
       />
-      {/* button */}
     </View>
-    
   );
 }
 
@@ -43,24 +31,6 @@ const styles = StyleSheet.create({
       flex: 1,
       alignContent: "center",
       padding: 50,
-  },
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    marginHorizontal: 16,
-  },
-  title: {
-    textAlign: 'center',
-    marginVertical: 8,
-  },
-  fixToText: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
-  separator: {
-    marginVertical: 8,
-    borderBottomColor: '#737373',
-    borderBottomWidth: StyleSheet.hairlineWidth,
   },
 });
 

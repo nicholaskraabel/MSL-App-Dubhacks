@@ -1,16 +1,15 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 
-
-import Menu from "../screens/menu";
+import DrawingPad from "../screens/DrawingPad.js";
 
 const Stack = createStackNavigator();
 
-const menuNavigator = () => (
+const DrawingPadNavigator = () => (
 
   <Stack.Navigator mode="modal" screenOptions={{ headerShown: false }}>
-    <Stack.Screen name="Menu" component={Menu} />
+    <Stack.Screen name="DrawingPad" component={DrawingPad} />
   </Stack.Navigator>
 );
 
-export default menuNavigator;
+export default DrawingPadNavigator;
