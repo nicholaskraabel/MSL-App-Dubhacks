@@ -36,7 +36,7 @@ function AboutPage({navigation}){
                     />
                     <Card 
                         heading="Noah"
-                        content="I'm actually developing an app with react native and i'm testing with my one plus 6 and it has a notch. The SafeAreaView is a solution for the iPhone X but for Android, it seems there is no solution."
+                        content="I am a student at Shoreline Community College in Shoreline, WA. I have been learning Python, Java, HTML/CSS/JavaScript. This is my first big project after learning coding for a years."
                         image={require("../img/readingPage.jpg")}
                     />
                     <Card 
