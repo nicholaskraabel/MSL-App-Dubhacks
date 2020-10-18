@@ -1,11 +1,12 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, ScrollView } from 'react-native';
+import Home from './assets/screens/home';
 import Menu from './assets/screens/menu';
-
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Menu></Menu>
+    <View style={{flex: 1, position: 'relative'}}>
+      <Menu />
+      <Home />
     </View>
   );
 }

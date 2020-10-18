@@ -19,6 +19,41 @@ const Styles = StyleSheet.create({
         fontWeight: '700',
         paddingBottom: 10,
       },
+    image: {
+        width: 300,
+        height: 300,
+    },
+    card: {
+        marginRight: 25,
+        padding: 20,
+        width: 250,
+        height: 375,
+        borderRadius: 28,
+        position: 'relative',
+    },
+    subCard: {
+        width: 250,
+        height: 110,
+        padding: 15,
+        borderRadius: 28,
+        backgroundColor: '#FFFFFF',
+        position: 'absolute',
+        bottom: 0,
+        borderWidth: 4,
+    },
+    buttonText: {
+        color: '#AFE0FF',
+        fontSize: 20,
+        fontWeight: '600',
+    },
+    button: {
+        borderColor: '#FFFFFF',
+        backgroundColor: '#FFFFFF',
+        marginTop: 100,
+        paddingHorizontal: 30,
+        paddingVertical: 10,
+        borderRadius: 10,
+    }
 });
 
 export default Styles;

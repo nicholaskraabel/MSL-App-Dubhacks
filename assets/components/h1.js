@@ -12,7 +12,7 @@ export default class H1 extends Component {
   render() {
 
     return (
-        <Text style={[Styles.h1]}> {this.props.children} </Text>
+        <Text style={[Styles.h1]}>{this.props.children}</Text>
     );
   }
 }
