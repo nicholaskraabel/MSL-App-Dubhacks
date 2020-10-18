@@ -12,22 +12,23 @@ export default class SpeechTask extends React.Component{
         this.state = {textArray: ["some sentences", "this better function", "I really hope this works"],
         text: "starting phrase",
         num: 0}
+    }
 
-const clickHandler = () => {
-    num++;
-    let text = textArra[num];
-    this.setState({text})
+clickHandler = (e) => {
+    this.num++;
+    let textUpate = textArra[this.num];
+    this.setState({text: textUpdate})
 }
 
 render(){
-return(
-    <View style={styles.h1}>
-        <Text>{text}</Text>
-        <View style={styles.button}>
-            <Button style={styles.buttonText} title = "Next" onPress={clickHandler}/>
+    return(
+        <View style={styles.h1}>
+            <Text>{this.state.text}</Text>
+            <View style={styles.button}>
+                <Button style={styles.buttonText} title = "Next" onPress={()=> {console.log('press')}}/>
+            </View>
         </View>
-    </View>
-);
+    );
 }
 
 }

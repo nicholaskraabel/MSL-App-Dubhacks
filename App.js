@@ -8,6 +8,8 @@ import { NavigationContainer } from "@react-navigation/native";
 import navigationTheme from "./assets/navigation/navigationTheme";
 import AppNavigator from "./assets/navigation/AppNavigator";
 
+import ReadAct from './ReadActPhoneticSound';
+
 
 export default function App() {
   return (
