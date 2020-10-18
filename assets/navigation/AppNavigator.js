@@ -1,7 +1,6 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import { mdiBookOpenPageVariantOutline } from '@mdi/js';
 
 
 import NewListingButton from "./NewListingButton";

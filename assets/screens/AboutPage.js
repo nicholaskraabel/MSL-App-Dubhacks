@@ -17,11 +17,11 @@ function AboutPage({navigation}){
                     </View>
                     <InfoCard
                         heading="Purpose"
-                        content="This project aims to build a Multi-Sensory Learning web application for use with children who have learning disabilities and struggle to read and write."
+                        content="This project aims to build a Multi-Sensory Learning application, specifically for use with children who have learning disabilities which cause them to struggle with reading and writing."
                     />
                     <InfoCard
                         heading="What is Multi-Sensory Learning?"
-                        content="It is a technique that attempts to use all the senses (taste, smell, touch, sight, hearing, and movement). This is a broad term that ranges from having students spell words in shaving cream to making theatrical performances of historical events."
+                        content="It is a technique that attempts to use all the senses (taste, smell, touch, sight, hearing, and movement) to help children learn more actively. We use techinques pioneered by Orton Gilligham and designed for dyslexic children."
                     />
                     <InfoCard
                         heading="Audience"
@@ -37,7 +37,7 @@ function AboutPage({navigation}){
                     />
                     <Card 
                         heading="Noah"
-                        content="I am a student at Shoreline Community College in Shoreline, WA. I have been learning Python, Java, HTML/CSS/JavaScript. This is my first big project after learning coding for a year."
+                        content="I am a student at Shoreline Community College in Shoreline, WA. I have been learning Python, Java, HTML/CSS/JavaScript. This is my first big project after learning coding for a years."
                         image={require("../img/readingPage.jpg")}
                     />
                     <Card 

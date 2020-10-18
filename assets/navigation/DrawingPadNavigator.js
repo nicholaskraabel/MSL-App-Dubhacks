@@ -1,6 +1,6 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-
+{/*
 import DrawingPad from "../screens/DrawingPad.js";
 
 const Stack = createStackNavigator();
@@ -13,3 +13,4 @@ const DrawingPadNavigator = () => (
 );
 
 export default DrawingPadNavigator;
+*/}
