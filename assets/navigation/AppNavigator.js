@@ -5,10 +5,11 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import NewListingButton from "./NewListingButton";
 
 
-import menuNavigator from '../navigation/menuNavigator';
+import InstruNavigator from '../navigation/InstrucNavigator';
 import aboutNavigator from '../navigation/aboutNavigator';
 import homeNavigator from '../navigation/homeNavigator';
 import DrawingPad from '../navigation/DrawingPadNavigator';
+import ReadActivity from '../navigation/ReadingActivityNavigator'
 
 
 
@@ -27,11 +28,11 @@ const AppNavigator = ({color, size}) => (
       }}
       />
     <Tab.Screen
-      name="Menu"
-      component={menuNavigator}
+      name="Instructions"
+      component={InstruNavigator}
       options={{
         tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="home" size={size} color={color} />
+            <MaterialCommunityIcons name="mdiClipboardListOutline" size={size} color={color} />
         ),
       }}
     />
@@ -50,10 +51,22 @@ const AppNavigator = ({color, size}) => (
       component={DrawingPad}
       options={{
         tabBarIcon: ({ color, size }) => (
-          <MaterialCommunityIcons name="information-outline" color={color} size={size} />
+          <MaterialCommunityIcons name="mdiPen" color={color} size={size} />
         ),
       }}
     />
+
+  <Tab.Screen
+  name="ReadActivity"
+  component={ReadActivity}
+  options={{
+    tabBarIcon: ({ color, size }) => (
+      <MaterialCommunityIcons name="mdiBookOpenPageVariantOutline" color={color} size={size} />
+     ),
+    }}
+  />
+
+
   </Tab.Navigator>
 
 );
