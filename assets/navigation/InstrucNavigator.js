@@ -9,7 +9,7 @@ const Stack = createStackNavigator();
 const InstruNavigator = () => (
 
   <Stack.Navigator mode="modal" screenOptions={{ headerShown: false }}>
-    <Stack.Screen name="Instructions" component={Intructions} />
+    <Stack.Screen name="Instructions" component={Instructions} />
   </Stack.Navigator>
 );
 

@@ -5,7 +5,7 @@ import {
   StyleSheet,
   View,
 } from 'react-native';
-
+{/*
 import { SketchCanvas } from '@terrylinla/react-native-sketch-canvas';
 
 export default class DrawingPad extends Component {
@@ -33,3 +33,4 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5FCFF',
   },
 });
+*/}

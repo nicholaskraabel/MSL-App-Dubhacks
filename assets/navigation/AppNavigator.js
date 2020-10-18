@@ -1,6 +1,8 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { mdiBookOpenPageVariantOutline } from '@mdi/js';
+
 
 import NewListingButton from "./NewListingButton";
 
@@ -32,7 +34,7 @@ const AppNavigator = ({color, size}) => (
       component={InstruNavigator}
       options={{
         tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="mdiClipboardListOutline" size={size} color={color} />
+            <MaterialCommunityIcons name="clipboard" size={size} color={color} />
         ),
       }}
     />
@@ -46,7 +48,7 @@ const AppNavigator = ({color, size}) => (
       }}
     />
 
-    <Tab.Screen
+    {/* <Tab.Screen
       name="Drawingpad"
       component={DrawingPad}
       options={{
@@ -55,13 +57,14 @@ const AppNavigator = ({color, size}) => (
         ),
       }}
     />
+    */}
 
   <Tab.Screen
   name="ReadActivity"
   component={ReadActivity}
   options={{
     tabBarIcon: ({ color, size }) => (
-      <MaterialCommunityIcons name="mdiBookOpenPageVariantOutline" color={color} size={size} />
+      <MaterialCommunityIcons name="book-open-variant" color={color} size={size} />
      ),
     }}
   />
