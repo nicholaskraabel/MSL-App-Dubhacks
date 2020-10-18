@@ -15,10 +15,6 @@ function AboutPage({navigation}){
         <ScrollView>
             <View style={styles.container}>
                 <ImageBackground style={styles.backgroundImage} source={require('../img/vector-pastel-background.jpg')}>
-                    <View style={styles.navigation}>
-                        <Ionicons name="md-arrow-round-back" size={26} color="white" onPress={console.log('hello')}/>
-                        <FontAwesome5 style={{paddingLeft:10}} name="home" size={24} color="white" />
-                    </View>
                     <View  style={styles.heading}>
                         <Text style={Style.h1}>Mission Statement</Text>
                     </View>
