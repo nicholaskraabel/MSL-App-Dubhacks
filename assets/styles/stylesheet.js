@@ -33,7 +33,7 @@ const Styles = StyleSheet.create({
     },
     subCard: {
         width: 250,
-        height: 110,
+        height: 100,
         padding: 15,
         borderRadius: 28,
         backgroundColor: '#FFFFFF',
