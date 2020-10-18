@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
-import H1 from '../components/h1';
-import h1 from '../components/h1';
+import { View, ScrollView, Button } from 'react-native';
+import H2 from '../components/h2';
+import GameCard from '../components/gameCard'
 
 export default class Menu extends Component {
   constructor(props) {
@@ -12,9 +12,29 @@ export default class Menu extends Component {
 
   render() {
     return (
-      <View>
-        <H1>Hey Jeff, Let's start learning!</H1>
-      </View>
+        <View style={{paddingLeft: 20, paddingTop: 10, borderTopLeftRadius: 28, borderTopRightRadius: 28}}>
+			<ScrollView style={{marginTop: 30, backgroundColor: '#FFFFFF'}}>
+				<H2>Writing</H2>
+				<ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={{marginBottom: 75, marginTop: 10}}>
+					<GameCard title="Title" color="#AFE0FF">
+						Short Description
+					</GameCard>
+					<GameCard title="Title" color="#EDE398">
+						Short Description
+					</GameCard>
+				</ScrollView>
+
+				<H2>Reading</H2>
+				<ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={{marginBottom: 75, marginTop: 10}}>
+					<GameCard title="Title" color="#ED98B5">
+						Short Description
+					</GameCard>
+					<GameCard title="Title" color="#98EDDA">
+						Short Description
+					</GameCard>
+				</ScrollView>
+			</ScrollView>
+        </View>
     );
   }
 }
