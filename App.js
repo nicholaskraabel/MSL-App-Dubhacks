@@ -10,7 +10,7 @@ import AppNavigator from "./assets/navigation/AppNavigator";
 
 import ReadAct from './ReadActPhoneticSound';
 
-import Writing from './WritingAct';
+import Writing from './assets/screens/WritingAct';
 export default function App() {
   return (
     <NavigationContainer theme={navigationTheme}>

@@ -11,6 +11,7 @@ import aboutNavigator from '../navigation/aboutNavigator';
 import homeNavigator from '../navigation/homeNavigator';
 import DrawingPad from '../navigation/DrawingPadNavigator';
 import ReadActivity from '../navigation/ReadingActivityNavigator'
+import WritingAct from '../navigation/writingActivityNavigator'
 
 
 
@@ -52,15 +53,25 @@ const AppNavigator = ({color, size}) => (
       component={DrawingPad}
       options={{
         tabBarIcon: ({ color, size }) => (
-          <MaterialCommunityIcons name="mdiPen" color={color} size={size} />
+          <MaterialCommunityIcons name="brush" color={color} size={size} />
         ),
       }}
     />
     
 
   <Tab.Screen
-  name="ReadActivity"
+  name="Read Activity"
   component={ReadActivity}
+  options={{
+    tabBarIcon: ({ color, size }) => (
+      <MaterialCommunityIcons name="typewriter" color={color} size={size} />
+     ),
+    }}
+  />
+
+  <Tab.Screen
+  name="Writing Activity"
+  component={WritingAct}
   options={{
     tabBarIcon: ({ color, size }) => (
       <MaterialCommunityIcons name="book-open-variant" color={color} size={size} />
