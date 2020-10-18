@@ -1,26 +1,22 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, SafeAreaView, Platform, ScrollView, ImageBackground} from 'react-native';
-import Nav from 'react-navigation'
 
 import { Ionicons } from '@expo/vector-icons'; 
 import { FontAwesome5 } from '@expo/vector-icons'; 
+import { NavigationContainer } from '@react-navigation/native';
 
 import Style from "../styles/stylesheet"
 import Card from '../components/AboutPageCard';
 import InfoCard from '../components/AboutPageInfoCard';
 
-backToMain = () =>{
-    this.props.navigation.navigate("main");
-}
 
-
-function AboutPage(props){
+function AboutPage({navigation}){
     return(
         <ScrollView>
             <View style={styles.container}>
                 <ImageBackground style={styles.backgroundImage} source={require('../img/vector-pastel-background.jpg')}>
                     <View style={styles.navigation}>
-                        <Ionicons name="md-arrow-round-back" size={26} color="white" onPress={backToMain}/>
+                        <Ionicons name="md-arrow-round-back" size={26} color="white" onPress={console.log('hello')}/>
                         <FontAwesome5 style={{paddingLeft:10}} name="home" size={24} color="white" />
                     </View>
                     <View  style={styles.heading}>
@@ -99,5 +95,7 @@ const styles = StyleSheet.create({
     }
 
 });
+
+
 
 export default AboutPage;

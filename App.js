@@ -1,20 +1,26 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View , Text,} from 'react-native';
 import Menu from './assets/screens/menu';
+import AboutPage from "./assets/screens/AboutPage";
+
+import { NavigationContainer } from "@react-navigation/native";
+
+import navigationTheme from "./assets/navigation/navigationTheme";
+import AppNavigator from "./assets/navigation/AppNavigator";
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Menu></Menu>
-    </View>
+    <NavigationContainer theme={navigationTheme}>
+      <AppNavigator/>
+    </NavigationContainer>
   );
 }
-
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#AFE0FF',
+    backgroundColor: '#afe0ff',
     alignItems: 'center',
     justifyContent: 'center',
   },
