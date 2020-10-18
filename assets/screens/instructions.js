@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { View, ScrollView, ImageBackground, StyleSheet } from 'react-native';
 import H2 from '../components/h2';
 import GameCard from '../components/gameCard'
-import custButton from '../navigation/buttons'
 import { Navigation } from 'react-native-navigation';
 
 export default class Instruction extends Component {

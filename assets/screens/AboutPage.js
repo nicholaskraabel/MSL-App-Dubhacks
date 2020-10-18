@@ -4,7 +4,6 @@ import { StyleSheet, Text, View, Image, Platform, ScrollView, ImageBackground} f
 import Style from "../styles/stylesheet"
 import Card from '../components/AboutPageCard';
 import InfoCard from '../components/AboutPageInfoCard';
-import custButton from '../navigation/buttons';
 
 
 function AboutPage({navigation}){
