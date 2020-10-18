@@ -38,18 +38,9 @@ const AppNavigator = ({color, size}) => (
         ),
       }}
     />
-    <Tab.Screen
-      name="About"
-      component={aboutNavigator}
-      options={{
-        tabBarIcon: ({ color, size }) => (
-          <MaterialCommunityIcons name="information-outline" color={color} size={size} />
-        ),
-      }}
-    />
 
    <Tab.Screen
-      name="Drawingpad"
+      name="Drawing Pad"
       component={DrawingPad}
       options={{
         tabBarIcon: ({ color, size }) => (
@@ -78,6 +69,16 @@ const AppNavigator = ({color, size}) => (
      ),
     }}
   />
+
+  <Tab.Screen
+      name="About"
+      component={aboutNavigator}
+      options={{
+        tabBarIcon: ({ color, size }) => (
+          <MaterialCommunityIcons name="information-outline" color={color} size={size} />
+        ),
+      }}
+    />
 
 
   </Tab.Navigator>

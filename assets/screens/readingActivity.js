@@ -1,18 +1,16 @@
 import Style from "../styles/stylesheet"
 import Card from '../components/AboutPageCard';
 import React, { Component } from 'react';
-import { View, ScrollView, ImageBackground, StyleSheet } from 'react-native';
+import { View, ScrollView, ImageBackground, StyleSheet, Button, useState } from 'react-native';
 
 
-export default function readAct({}){
+export default class readAct extends React.Component{
+        render(){
         var dataArray = ["some sentences", "this better function", "I really hope this works"];
         var num = 0;
-        function SpeechTask(){
-        
-            const [value, onChangeText] = React.useState(dataArray[num]);
-        
-            return(
-                <View style={styles.container}>
+        const [value, onChangeText] = React.useState(dataArray[num])
+        return(
+            <View style={styles.container}>
                     <Text>{value}</Text>
                     <View style={styles.button}>
                         <Button style={styles.buttonText} title = "Next" onPress={value=> {onChangeText(dataArray[num]);  num++; if(num > 2){

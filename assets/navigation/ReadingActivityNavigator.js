@@ -2,7 +2,7 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 
 
-import ReadAct from "../screens/readingActivity";
+import ReadAct from "../screens/readingActivity.js";
 
 const Stack = createStackNavigator();
 
