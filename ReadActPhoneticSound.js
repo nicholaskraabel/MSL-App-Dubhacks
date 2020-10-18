@@ -3,32 +3,33 @@ import { StyleSheet, Text, View, Button, useState, Alert } from 'react-native';
 import { Audio } from 'expo-av';
 import * as Speech from 'expo-speech';
 import { render } from 'react-dom';
-import styles from './assets/styles/stylesheet.js'
 
 var dataArray = ["some sentences", "this better function", "I really hope this works"];
-export default class SpeechTask extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {textArray: ["some sentences", "this better function", "I really hope this works"],
-        text: "starting phrase",
-        num: 0}
-    }
+var num = 0;
+function SpeechTask(){
 
-clickHandler = (e) => {
-    this.num++;
-    let textUpate = textArra[this.num];
-    this.setState({text: textUpdate})
-}
+    const [value, onChangeText] = React.useState(dataArray[num]);
 
-render(){
     return(
-        <View style={styles.h1}>
-            <Text>{this.state.text}</Text>
+        <View style={styles.container}>
+            <Text>{value}</Text>
             <View style={styles.button}>
-                <Button style={styles.buttonText} title = "Next" onPress={()=> {console.log('press')}}/>
+                <Button style={styles.buttonText} title = "Next" onPress={value=> {onChangeText(dataArray[num]);  num++; if(num > 2){
+                    num =0;
+                }}}/>
             </View>
         </View>
     );
 }
 
-}
+const styles = StyleSheet.create({
+    container:{
+        flex: 1,
+       
+        alignContent: "center",
+        padding: 50,
+    },
+  
+  });
+
+export default SpeechTask;
