@@ -4,9 +4,12 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 import NewListingButton from "./NewListingButton";
 
+
 import menuNavigator from '../navigation/menuNavigator';
 import aboutNavigator from '../navigation/aboutNavigator';
 import homeNavigator from '../navigation/homeNavigator';
+import DrawingPad from '../navigation/DrawingPadNavigator';
+
 
 
 
@@ -41,8 +44,18 @@ const AppNavigator = ({color, size}) => (
         ),
       }}
     />
+
+    <Tab.Screen
+      name="Drawingpad"
+      component={DrawingPad}
+      options={{
+        tabBarIcon: ({ color, size }) => (
+          <MaterialCommunityIcons name="information-outline" color={color} size={size} />
+        ),
+      }}
+    />
   </Tab.Navigator>
 
 );
 
-export default AppNavigator;
+export default AppNavigator

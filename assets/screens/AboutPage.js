@@ -4,6 +4,7 @@ import { StyleSheet, Text, View, Image, Platform, ScrollView, ImageBackground} f
 import Style from "../styles/stylesheet"
 import Card from '../components/AboutPageCard';
 import InfoCard from '../components/AboutPageInfoCard';
+import custButton from '../navigation/buttons';
 
 
 function AboutPage({navigation}){
@@ -24,7 +25,7 @@ function AboutPage({navigation}){
                     />
                     <InfoCard
                         heading="Audience"
-                        content="Our target audience are kids in kindergarten to second grade. This for two reason. First, it is far more practical and easier to design tasks for younger kids as the tasks can be shorter and less involved. Secondly, this is who would benefit them most."
+                        content="Our target audience are kids in kindergarten to second grade. As this is demographic who can benefit the most from these techinques."
                     />
                     <View  style={styles.heading}>
                         <Text style={Style.h1}>Our Team</Text>

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { View, ScrollView, ImageBackground, StyleSheet } from 'react-native';
 import H2 from '../components/h2';
 import GameCard from '../components/gameCard'
+import custButton from '../navigation/buttons'
+import { Navigation } from 'react-native-navigation';
 
 export default class Menu extends Component {
   constructor(props) {
@@ -22,10 +24,14 @@ export default class Menu extends Component {
 						<GameCard title="Copy the sentence" color="#AFE0FF">
 							Copy or write over a sentence  while it is being read out.
 						</GameCard>
+
+						
+
 						<GameCard title="Draw the sentence" color="#EDE398">
 							Read a block of sentence and draw or write it!
 						</GameCard>
 					</ScrollView>
+					<custButton text='Play' onPress={() => Navigation.navigate('Home')}/>
 
 					<H2>Reading</H2>
 					<ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={{marginBottom: 75, marginTop: 10}}>
@@ -39,6 +45,8 @@ export default class Menu extends Component {
 				</View>
 				</ImageBackground>
 			</ScrollView>
+			<custButton text='Play' onPress={() => Navigation.navigate('Home')}/>
+
         </View>
 		
     );
