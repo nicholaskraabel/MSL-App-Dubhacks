@@ -37,7 +37,7 @@ function AboutPage({navigation}){
                     />
                     <Card 
                         heading="Noah"
-                        content="I am a student at Shoreline Community College in Shoreline, WA. I have been learning Python, Java, HTML/CSS/JavaScript. This is my first big project after learning coding for a years."
+                        content="I am a student at Shoreline Community College in Shoreline, WA. I have been learning Python, Java, HTML/CSS/JavaScript. This is my first big project after learning coding for a year."
                         image={require("../img/readingPage.jpg")}
                     />
                     <Card 
