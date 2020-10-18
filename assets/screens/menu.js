@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, ScrollView, Button, ImageBackground, StyleSheet, ImageBackgroundBase } from 'react-native';
+import { View, ScrollView, ImageBackground, StyleSheet } from 'react-native';
 import H2 from '../components/h2';
 import GameCard from '../components/gameCard'
 

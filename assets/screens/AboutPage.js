@@ -1,9 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, SafeAreaView, Platform, ScrollView, ImageBackground} from 'react-native';
-
-import { Ionicons } from '@expo/vector-icons'; 
-import { FontAwesome5 } from '@expo/vector-icons'; 
-import { NavigationContainer } from '@react-navigation/native';
+import { StyleSheet, Text, View, Image, Platform, ScrollView, ImageBackground} from 'react-native';
 
 import Style from "../styles/stylesheet"
 import Card from '../components/AboutPageCard';
