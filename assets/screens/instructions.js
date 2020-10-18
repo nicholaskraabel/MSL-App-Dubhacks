@@ -29,7 +29,7 @@ export default class Instruction extends Component {
 							Read a block of sentence and draw or write it!
 						</GameCard>
 					</ScrollView>
-					<custButton text='Play' onPress={() => Navigation.navigate('Home')}/>
+					
 
 					<H2>Reading</H2>
 					<ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={{marginBottom: 75, marginTop: 10}}>
@@ -43,7 +43,7 @@ export default class Instruction extends Component {
 				</View>
 				</ImageBackground>
 			</ScrollView>
-			<custButton text='Play' onPress={() => Navigation.navigate('Home')}/>
+			
 
         </View>
 		

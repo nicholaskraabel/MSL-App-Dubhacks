@@ -4,16 +4,25 @@ import React, { Component } from 'react';
 import { View, ScrollView, ImageBackground, StyleSheet } from 'react-native';
 
 
-function Activity({navigation}){
-    return(
-        <ScrollView>
-            <View style={styles.container}>
-                    <View  style={styles.heading}>
-                        <Text style={Style.h1}>Mission Statement</Text>
+export default function readAct({}){
+        var dataArray = ["some sentences", "this better function", "I really hope this works"];
+        var num = 0;
+        function SpeechTask(){
+        
+            const [value, onChangeText] = React.useState(dataArray[num]);
+        
+            return(
+                <View style={styles.container}>
+                    <Text>{value}</Text>
+                    <View style={styles.button}>
+                        <Button style={styles.buttonText} title = "Next" onPress={value=> {onChangeText(dataArray[num]);  num++; if(num > 2){
+                            num =0;
+                        }}}/>
                     </View>
-            </View>
-        </ScrollView>
-    );
+                </View>
+            );
+        }
+        
 }
 
 const styles = StyleSheet.create({

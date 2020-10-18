@@ -47,7 +47,7 @@ const AppNavigator = ({color, size}) => (
       }}
     />
 
-    {/* <Tab.Screen
+   <Tab.Screen
       name="Drawingpad"
       component={DrawingPad}
       options={{
@@ -56,7 +56,7 @@ const AppNavigator = ({color, size}) => (
         ),
       }}
     />
-    */}
+    
 
   <Tab.Screen
   name="ReadActivity"

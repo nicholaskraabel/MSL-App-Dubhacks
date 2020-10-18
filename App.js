@@ -13,7 +13,9 @@ import ReadAct from './ReadActPhoneticSound';
 import Writing from './WritingAct';
 export default function App() {
   return (
-   <Writing/>
+    <NavigationContainer theme={navigationTheme}>
+      <AppNavigator/>
+    </NavigationContainer>
   );
 }
 
